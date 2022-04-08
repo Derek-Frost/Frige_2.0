@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/activity_frige.xml" value="0.22112462006079028" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/add_dialog.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/add_dialog_count.xml" value="0.19427558257345492" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/add_dialog_row.xml" value="0.39947916666666666" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/fragment_blank.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/fragment_item.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/fragment_item_list.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/row.xml" value="0.1" />
+        <entry key="..\:/Users/Frost/AndroidStudioProjects/Frige_20/app/src/main/res/layout/text.xml" value="0.2674772036474164" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/activity_main.xml" value="0.440625" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/add_dialog.xml" value="0.440625" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/add_dialog_count.xml" value="0.440625" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/add_dialog_row.xml" value="0.440625" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/fragment_maps.xml" value="0.2137791286727457" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/g_map.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/user/Desktop/Frige_20/app/src/main/res/layout/row.xml" value="0.2695035460992908" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
