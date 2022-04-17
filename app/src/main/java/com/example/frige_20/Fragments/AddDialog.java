@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
@@ -54,18 +55,22 @@ public class AddDialog extends DialogFragment {
         view.setAdapter(adapter);
 
         button.setOnClickListener(view1 -> {
-            DataUtils helpData = new DataUtils();
-            Product product  = adapter.getFinalProduct();
-            ProductName productName = db.getProductDao().getProductNameId(product.getIdproduct());
-            product.setCount(Integer.parseInt(String.valueOf(editCount.getText())));
-            product.setWeight(Float.parseFloat(String.valueOf(editWeight.getText()))
-                    / Float.parseFloat(String.valueOf(editCount.getText())));
-            product.setСoord(locationListener.getLocationS());
-            product.setTime(String.valueOf(Calendar.getInstance().getTime()));
-            product.setTimeEnd(helpData.plusDate(Calendar.getInstance(), productName.getTime()));
-            if(checkBox.isChecked()) product.setIdFrige(1);
-            db.getProductDao().insert(product);
-            dismiss();
+            if(String.valueOf(editCount.getText()).matches("[-+]?\\d+") &&
+                    Integer.parseInt(String.valueOf(editCount.getText())) > 0 &&
+                    Float.parseFloat(String.valueOf(editWeight.getText())) > 0) {
+                DataUtils helpData = new DataUtils();
+                Product product = adapter.getFinalProduct();
+                ProductName productName = db.getProductDao().getProductNameId(product.getIdproduct());
+                product.setCount(Integer.parseInt(String.valueOf(editCount.getText())));
+                product.setWeight(Float.parseFloat(String.valueOf(editWeight.getText()))
+                        / Float.parseFloat(String.valueOf(editCount.getText())));
+                product.setСoord(locationListener.getLocationS());
+                product.setTime(String.valueOf(Calendar.getInstance().getTime()));
+                product.setTimeEnd(helpData.plusDate(Calendar.getInstance(), productName.getTime()));
+                if (checkBox.isChecked()) product.setIdFrige(1);
+                db.getProductDao().insert(product);
+                dismiss();
+            } else Toast.makeText(getContext(), "Проверьте введенные данные", Toast.LENGTH_LONG).show();
         });
         return v;
     }
